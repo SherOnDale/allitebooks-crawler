@@ -1,0 +1,22 @@
+{
+  "name": "allitebooks-crawler",
+  "version": "1.0.0",
+  "description": "a crawler for http://www.allitebooks.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SherOnDale/allitebooks-crawler.git"
+  },
+  "keywords": [
+    "crawler"
+  ],
+  "author": "Sherin Binu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SherOnDale/allitebooks-crawler/issues"
+  },
+  "homepage": "https://github.com/SherOnDale/allitebooks-crawler#readme"
+}
