@@ -66,7 +66,7 @@ const BookSchema = new mongoose.Schema({
   categories: [
     {
       type: mongoose.Schema.ObjectId,
-      ref: 'Category',
+      ref: 'SubCategory',
       required: 'Categories is required'
     }
   ]
