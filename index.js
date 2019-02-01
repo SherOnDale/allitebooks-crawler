@@ -19,7 +19,9 @@ const doScrap = pageNumber => {
               .then(resTwo => resTwo.text())
               .then(resPage => {
                 const $page = cheerio.load(resPage);
+                book.title = $page('h1.single-title').text();
                 book.description = $page('.entry-content p').text();
+                book.thumbnailUrl = $page('.hover-thumb img').attr('src');
                 book.downloadUrl = $page('.download-links a')
                   .attr('href')
                   .replace(/ /g, '%20');
@@ -40,8 +42,7 @@ const doScrap = pageNumber => {
       );
     })
     .then(books => {
-      console.log(books.length);
-      if (pageNumber < 5) doScrap(pageNumber + 1);
+      console.log(books);
     })
     .catch(error => {
       console.log(error);
