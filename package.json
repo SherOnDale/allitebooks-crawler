@@ -21,7 +21,7 @@
   "homepage": "https://github.com/SherOnDale/allitebooks-crawler#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "mongoose": "^5.4.8",
+    "mongoose": "^5.11.7",
     "node-fetch": "^2.3.0"
   }
 }
